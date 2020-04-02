@@ -11,12 +11,12 @@ animations = [ {
 "frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "idle",
-"speed": 2.5
+"speed": 1.0
 }, {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "walking",
-"speed": 5.0
+"speed": 4.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
@@ -27,7 +27,8 @@ extents = Vector2( 3.5, 8 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "walking"
-frame = 2
+frame = 1
+speed_scale = 1.583
 playing = true
 offset = Vector2( 0, -1 )
 
