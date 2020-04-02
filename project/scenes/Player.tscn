@@ -27,12 +27,13 @@ extents = Vector2( 3.5, 8 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "walking"
-frame = 1
+frame = 2
 speed_scale = 1.583
 playing = true
 offset = Vector2( 0, -1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( -0.5, 0 )
 shape = SubResource( 2 )
 
